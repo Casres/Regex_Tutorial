@@ -32,7 +32,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 Symbol  | description
 ------------- | -------------
-[]  | Character classes matches any single character in a range or set enclosed in square brackets. For example, [aeiou] matches any vowel. You can also use a shorthand notation for a range of characters. For example, [0-9] matches any decimal digit. If the sequence is preceded by a carat:
+[ ]  | Character classes matches any single character in a range or set enclosed in square  brackets. For example, [aeiou] matches any vowel. You can also use a shorthand notation for a range of characters. For example, [0-9] matches any decimal digit. If the sequence is preceded by a carat:
 
 ^
 
