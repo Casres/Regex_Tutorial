@@ -61,7 +61,7 @@ Output will be ```2020```
 
 Symbol  | Description
 ------------- | -------------
-- ```|``` - or []  | Content Cell
+__|__ or []  | Content Cell
 
 - - - -
 ### Character Classes
