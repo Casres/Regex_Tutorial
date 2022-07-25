@@ -44,12 +44,12 @@ Symbol  | Description
 ------------- | -------------
 {} | Quantifiers match a number of instances of a character, group, or character class in a string.
 
-Markup: 'let str = 'ECMAScript 2020';
+```let str = 'ECMAScript 2020';
 let re = /\d{4}/;
 
 let result = str.match(re);
 
-console.log(result);'
+console.log(result);```
 
 Output will be ```2020```
 
