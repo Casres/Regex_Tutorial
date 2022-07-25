@@ -22,36 +22,75 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Regex Components
 
+Symbol  | Description
+------------- | -------------
+Content Cell  | Content Cell
+
 ### Anchors
+
+Symbol  | Description
+------------- | -------------
+Content Cell  | Content Cell
 
 ### Quantifiers
 
+Symbol  | Description
+------------- | -------------
+Content Cell  | Content Cell
+
 ### OR Operator
+
+Symbol  | Description
+------------- | -------------
+  |  | This is for the OR operator. Example being ```couch|chair```, this will find ```couch``` or ```chair```. 
 
 ### Character Classes
 
 Symbol  | description
 ------------- | -------------
-[ ]  | Character classes matches any single character in a range or set enclosed in square  brackets. For example, [aeiou] matches any vowel. You can also use a shorthand notation for a range of characters. For example, [0-9] matches any decimal digit. If the sequence is preceded by a carat:
-
-^
-
-it matches any single character NOT from the range or set.
-For example, [^a-z] matches any character that is not a letter in the alphabet.
+  [ ]  | Character classes matches any single character in a range or set enclosed in square  brackets. For example, [aeiou] matches any vowel. You can also use a shorthand notation for a range of characters. For example, [0-9] matches any decimal digit. If the sequence is preceded by a carat:    ^   it matches any single character NOT from the range or set. For example, [^a-z] matches any character that is not a letter in the alphabet.
 
 ### Flags
 
+Symbol  | Description
+------------- | -------------
+Content Cell  | Content Cell
+
 ### Grouping and Capturing
+
+Symbol  | Description
+------------- | -------------
+Content Cell  | Content Cell
 
 ### Bracket Expressions
 
+Symbol  | Description
+------------- | -------------
+Content Cell  | Content Cell
+
 ### Greedy and Lazy Match
+
+Symbol  | Description
+------------- | -------------
+Content Cell  | Content Cell
 
 ### Boundaries
 
+Symbol  | Description
+------------- | -------------
+Content Cell  | Content Cell
+
 ### Back-references
 
+Symbol  | Description
+------------- | -------------
+Content Cell  | Content Cell
+
 ### Look-ahead and Look-behind
+
+Symbol  | Description
+------------- | -------------
+Content Cell  | Content Cell
 
 ## Author
 
