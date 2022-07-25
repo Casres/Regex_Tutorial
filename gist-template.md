@@ -43,6 +43,7 @@ Example: if you are looking for matches for 4 digits, you can do ```/\d\d\d\d/``
 Symbol  | Description
 ------------- | -------------
 {} | Quantifiers match a number of instances of a character, group, or character class in a string.
+abc __{2,5}__ | matches a string that has __ab__ followed by 2 up to 5 __c__
 
 ```
 let str = 'ECMAScript 2020';
