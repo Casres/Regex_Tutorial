@@ -22,15 +22,14 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Regex Components
 
-Symbol  | Description
-------------- | -------------
-Content Cell  | Content Cell
+null
 
 ### Anchors
 
 Symbol  | Description
 ------------- | -------------
-Content Cell  | Content Cell
+^  | The caret ^ matches the position before the first character in the string. Applying ^a to abc matches a. ^b does not match abc at all, because the b cannot be matched right after the start of the string, matched by ^.
+$  | Similarly, $ matches right after the last character in the string. c$ matches c in abc, while a$ does not match at all.
 
 ### Quantifiers
 
