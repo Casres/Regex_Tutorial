@@ -26,7 +26,7 @@ null
 
 ### Anchors
 
-Anchors are a different breed when it comes to the rest of the other regex symbols syntax. *_They do not match any character at all_*. Instead, they match a position before, after, or between characters. They can be used to “anchor” the regex match at a certain position.
+Anchors are a different breed when it comes to the rest of the other regex symbols syntax. __*They do not match any character at all*__. Instead, they match a position before, after, or between characters. They can be used to “anchor” the regex match at a certain position.
 
 Symbol  | Description
 ------------- | -------------
