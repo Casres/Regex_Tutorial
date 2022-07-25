@@ -23,7 +23,6 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 - - - -
-null
 
 ### Anchors
 
@@ -39,9 +38,20 @@ $  | Similarly, $ matches right after the last character in the string. c$ match
 - - - -
 ### Quantifiers
 
+Example: if you are looking for matches for 4 digits, you can do ```/\d\d\d\d/```, or you can use quantifiers and do ```/\d{4}/```.
+
 Symbol  | Description
 ------------- | -------------
-{} | Content Cell
+{} | Quantifiers match a number of instances of a character, group, or character class in a string.
+
+'let str = 'ECMAScript 2020';
+let re = /\d{4}/;
+
+let result = str.match(re);
+
+console.log(result);'
+
+Output will be ```2020```
 
 - - - -
 ### OR Operator
