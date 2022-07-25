@@ -74,7 +74,9 @@ Character classes have a ```/``` in the front of a letter, and depending on the 
 
 Symbol  | Description
 ------------- | -------------
-[]  | 
+\d  | matches a single digit character.
+\w  | matches any word character. (selects every word, NOT spaces(or whitespace as it is sometimes referred too as) or digits or special characters(!@#$%^&*-+))
+\s  | matches any spaces between characters.
 
 - - - -
 ### Flags
