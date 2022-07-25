@@ -59,16 +59,22 @@ Output will be ```2020```
 - - - -
 ### OR Operator
 
-Symbol  | Description
-------------- | -------------
-__|__ or []  | Content Cell
+OR operator uses ```|``` or ```[]``` to match either or of a character. For example, ```a(b|c)``` matches a string that has a followed by ```b``` or ```c``` __(and captures b or c)__. 
 
-- - - -
-### Character Classes
+a[bc] same as previous, but without capturing b or c
 
 Symbol  | description
 ------------- | -------------
 [ ]  | Character classes matches any single character in a range or set enclosed in square  brackets. For example, [aeiou] matches any vowel. You can also use a shorthand notation for a range of characters. For example, [0-9] matches any decimal digit. If the sequence is preceded by a carat:    ^   it matches any single character NOT from the range or set. For example, [^a-z] matches any character that is not a letter in the alphabet.
+
+- - - -
+### Character Classes
+
+Character classes have a ```/``` in the front of a letter, and depending on the letter, will dictate what you will try to match. 
+
+Symbol  | Description
+------------- | -------------
+[]  | 
 
 - - - -
 ### Flags
