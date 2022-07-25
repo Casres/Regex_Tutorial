@@ -44,7 +44,7 @@ Symbol  | Description
 ------------- | -------------
 {} | Quantifiers match a number of instances of a character, group, or character class in a string.
 
-'let str = 'ECMAScript 2020';
+Markup: 'let str = 'ECMAScript 2020';
 let re = /\d{4}/;
 
 let result = str.match(re);
