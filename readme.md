@@ -42,7 +42,7 @@ Content Cell  | Content Cell
 
 Symbol  | Description
 ------------- | -------------
-Content Cell  | Content Cell
+(|||)  | Content Cell
 
 ### Character Classes
 
