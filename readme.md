@@ -40,6 +40,9 @@ Content Cell  | Content Cell
 
 ### OR Operator
 
+Symbol  | Description
+------------- | -------------
+  ``` | ```  | This is for the OR operator. Example being ```couch|chair```, this will find ```couch``` or ```chair```. 
 
 ### Character Classes
 
