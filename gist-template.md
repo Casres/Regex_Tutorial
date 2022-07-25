@@ -26,6 +26,8 @@ null
 
 ### Anchors
 
+Anchors are a different breed when it comes to the rest of the other regex symbols syntax. *They do not match any character at all*. Instead, they match a position before, after, or between characters. They can be used to “anchor” the regex match at a certain position.
+
 Symbol  | Description
 ------------- | -------------
 ^  | The caret ^ matches the position before the first character in the string. Applying ^a to abc matches a. ^b does not match abc at all, because the b cannot be matched right after the start of the string, matched by ^.
