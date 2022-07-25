@@ -22,72 +22,84 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Regex Components
 
+- - - -
 null
 
 ### Anchors
 
 Anchors are a different breed when it comes to the rest of the other regex symbols syntax. __*They do not match any character at all*__. Instead, they match a position before, after, or between characters. They can be used to “anchor” the regex match at a certain position.
-  - For example, this is an email regex to verify a users email input ```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/```. Now using a beginning ```^``` and ending ```$``` Anchor after the @ symbol would look like this ```/^([\da-z\.-]+)\.([a-z\.]{2,6})$/```. 
+  - For example, this is an email regex to verify a users email input ```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/```. Now using a beginning ```^``` and ending ```$``` Anchor before the @ symbol would look like this ```/^([a-z0-9_\.-]+)$/```. 
 
 Symbol  | Description
 ------------- | -------------
 ^  | The caret ^ matches the position before the first character in the string. Applying ^a to abc matches a. ^b does not match abc at all, because the b cannot be matched right after the start of the string, matched by ^.
 $  | Similarly, $ matches right after the last character in the string. c$ matches c in abc, while a$ does not match at all.
 
+
+- - - -
 ### Quantifiers
 
 Symbol  | Description
 ------------- | -------------
-Content Cell  | Content Cell
+{} | Content Cell
 
+- - - -
 ### OR Operator
 
 Symbol  | Description
 ------------- | -------------
 Content Cell  | Content Cell
 
+- - - -
 ### Character Classes
 
 Symbol  | description
 ------------- | -------------
 [ ]  | Character classes matches any single character in a range or set enclosed in square  brackets. For example, [aeiou] matches any vowel. You can also use a shorthand notation for a range of characters. For example, [0-9] matches any decimal digit. If the sequence is preceded by a carat:    ^   it matches any single character NOT from the range or set. For example, [^a-z] matches any character that is not a letter in the alphabet.
 
+- - - -
 ### Flags
 
 Symbol  | Description
 ------------- | -------------
 Content Cell  | Content Cell
 
+- - - -
 ### Grouping and Capturing
 
 Symbol  | Description
 ------------- | -------------
 Content Cell  | Content Cell
 
+- - - -
 ### Bracket Expressions
 
 Symbol  | Description
 ------------- | -------------
 Content Cell  | Content Cell
 
+- - - -
 ### Greedy and Lazy Match
 
 Symbol  | Description
 ------------- | -------------
 Content Cell  | Content Cell
 
+- - - -
 ### Boundaries
 
 Symbol  | Description
 ------------- | -------------
 Content Cell  | Content Cell
 
+- - - -
 ### Back-references
 
 Symbol  | Description
 ------------- | -------------
 Content Cell  | Content Cell
 
+- - - -
 ### Look-ahead and Look-behind
 
 Symbol  | Description
