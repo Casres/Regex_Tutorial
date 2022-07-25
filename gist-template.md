@@ -77,7 +77,7 @@ Symbol  | Description
 \d  | matches a single digit characters.
 \w  | matches any word character. (selects every word, NOT spaces(or whitespace as it is sometimes referred too as) or digits or special characters(!@#$%^&*-+))
 \s  | matches any spaces between characters.
-\.  | matches all and any characters. 
+```\.```  | matches all and any characters. 
 
 - - - -
 ### Flags
