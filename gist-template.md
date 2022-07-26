@@ -172,6 +172,8 @@ alert( str.match(regexp) );
 
 Output would be: 你,好
 
+-------------------------------------------------
+
 - Another example would be to find characters that denote a currency, such as $, €, ¥.
 ```
 let regexp = /\p{Sc}\d/gu;
