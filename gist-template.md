@@ -195,7 +195,7 @@ Symbol  | Description
 ()  | Parentheses create a capturing croup with what ever value is in the parentheses. 
 a(__bc__) | The parentheses create a capturing group with value __bc__
 <>  | The less than and greater than signs make a group with what ever value is inside. 
-a(?<foo>bc) a(?<foo>bc) | The "?" disables the capturing group, while ?<foo> was a name that was put into a group.
+```a(?<foo>bc) ```| The "?" disables the capturing group, while ?<foo> was a name that was put into a group.
 
 - - - -
 ### Bracket Expressions
