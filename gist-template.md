@@ -90,8 +90,8 @@ i  | __Ignore Casing__ is a Boolean and initially is set to true. If the ```i```
 g  | __Global Search__ serves to make an expression look for all its matches, rather than stopping at the first one. By default, when a regex engine finds the first match for a given pattern in a given test string, it terminates right at that point without looking any further. 
 s  | __Dot all__ (the wildcard) matches all possible characters. By default, the dot character in a regular expression matches everything, but newline characters. To get it to match newline characters as well, we are given the s flag. the 's' is an abbreviation for __*single-line mode*__. 
 m  | __multiline mode__ serves to make the boundary tokens (```^``` and ```$```) match the beginning and end of each line. By default, the (```^``` and ```$```) characters, in an expression, match the beginning and ending boundaries of a given test string that the expression is on. But with the ```m``` flag in place, __they__ instead __do this for every line in the string__. A more controlled flag from ```s```.
-y  | Sticky searching Content Cell
-u  | Unicode search Content Cell
+y  | __Sticky searching__ allows the developer to start their search in a given string from a custom index other than 0. In other words, the developer can search for matches in the string at any index, such as 2,3 or 5 
+u  | __Unicode search__ Content Cell
 
 - An example for __Ignore Casing__ would be: 
 ```
@@ -99,7 +99,7 @@ var str = "Hello world! This 'Hello World' convention is quite common in introdu
 var regex = /hello/i; 
 var newStr = str.replace(regex, '(Hello)');
 ```
-Output would be: "world! This 'World' convention is quite common in introducing programming languages."
+Output would be: "world! This 'World' convention is quite common in introducing programming languages.".
 
 - An example for __Global Search__ would be:
 ```
@@ -107,7 +107,7 @@ var str = "50 is the half of 50 x 2 that is 80.";
 var newStr = str.replace(/50/g, "40");
 console.log(newStr);
 ```
-Output would be: "40 is the half of 40 x 2 that is 80."
+Output would be: "40 is the half of 40 x 2 that is 80.".
 
 
 - An example for __Dot all__ would be:
@@ -141,15 +141,24 @@ let str = `1st place: Winnie
 console.log( str.match(/^\d/g) ); // 1
 ```
 
-Output would be:
+Output would be: 1, 2, 3 for the first example; 1 for the second example.
 
 
 - An example for __Sticky searching__ would be:
 ```
+let str = 'let varName = "value"';
 
+let regexp = /\w+/y;
+
+regexp.lastIndex = 3;
+alert( regexp.exec(str) ); // null (there's a space at position 3, not a word)
+
+regexp.lastIndex = 4;
+alert( regexp.exec(str) ); // varName (word at position 4)
 ```
 
-Output would be:
+Output would be: the 1st alert would be null, since it's on a white space (space between characters); varname would be in the alert since that is what is at the 4th index.
+*__(L in the string is index 0)__*
 
 
 - An example for __Unicode search__ would be:
