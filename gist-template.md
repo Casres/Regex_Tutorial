@@ -86,9 +86,9 @@ A flag changes the default searching behavior of a regular expression. It makes 
 
 Symbol  | Description
 ------------- | -------------
-i  | Ignore Casing is a Boolean and initially is set to true. If the ```i``` flag is used, then it becomes false. The ```i``` flag indicates that case should be ignored while attempting a match in a string. 
-g  | Global Search serves to make an expression look for all its matches, rather than stopping at the first one. By default, when a regex engine finds the first match for a given pattern in a given test string, it terminates right at that point without looking any further. 
-s  | Content Cell
+i  | __Ignore Casing__ is a Boolean and initially is set to true. If the ```i``` flag is used, then it becomes false. The ```i``` flag indicates that case should be ignored while attempting a match in a string. 
+g  | __Global Search__ serves to make an expression look for all its matches, rather than stopping at the first one. By default, when a regex engine finds the first match for a given pattern in a given test string, it terminates right at that point without looking any further. 
+s  | __Dot all__ (the wildcard) matches all possible characters. By default, the dot character in a regular expression matches everything, but newline characters. To get it to match newline characters as well, we are given the s flag. the 's' is an abbreviation for __*single-line mode*__. 
 m  | Content Cell
 y  | Content Cell
 u  | Content Cell
@@ -101,11 +101,53 @@ var newStr = str.replace(regex, '(Hello)');
 ```
 Output would be: "world! This 'World' convention is quite common in introducing programming languages."
 
-- g example here:
-- s example here:
-- m example here:
-- y example here:
-- u example here:
+- An example for __Global Search__ would be:
+```
+var str = "50 is the half of 50 x 2 that is 80.";
+var newStr = str.replace(/50/g, "40");
+console.log(newStr);
+```
+Output would be: "40 is the half of 40 x 2 that is 80."
+
+
+- An example for __Dot all__ would be:
+```
+The first expression /.+/g without the s flag will match every single line in str. The highlighted portions shown below represent the matches:
+
+">Content flows>\n>downward> and\ndownward"
+
+The second expression /.+/gs with the s flag will make . match every character including \n, which means that the expression will match the whole string str, as shown below:
+
+"Content flows\ndownward and\ndownward"
+```
+
+Output would be:
+
+
+- An example for __Ignore Casing__ would be:
+```
+
+```
+
+Output would be:
+
+
+- An example for __Ignore Casing__ would be:
+```
+
+```
+
+Output would be:
+
+
+- An example for __Ignore Casing__ would be:
+```
+
+```
+
+Output would be:
+
+
 - - - -
 ### Grouping and Capturing
 
