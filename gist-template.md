@@ -121,7 +121,7 @@ The second expression /.+/gs with the s flag will make . match every character i
 " 'Content flows\ndownward and\ndownward' "
 ```
 
-Output would be:
+Output would be: Content flows\ndownward and\ndownward. 
 
 
 - An example for __Ignore Casing__ would be:
