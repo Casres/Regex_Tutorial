@@ -126,7 +126,17 @@ Output would be: Content flows\ndownward and\ndownward.
 
 - An example for __Multiline mode__ would be:
 ```
+let str = `1st place: Winnie
+2nd place: Piglet
+3rd place: Eeyore`;
 
+console.log( str.match(/^\d/gm) ); // 1, 2, 3
+
+let str = `1st place: Winnie
+2nd place: Piglet
+3rd place: Eeyore`;
+
+console.log( str.match(/^\d/g) ); // 1
 ```
 
 Output would be:
