@@ -188,7 +188,11 @@ Output would be: $2,€1,¥9
 - - - -
 ### Grouping and Capturing
 
-Grouping and Capturing is very useful when needing to *extract information from strings or data* using your preferred programming language. 
+Grouping and Capturing is very useful when needing to *extract information from strings or data* into unified pattern, so that it matches as a complete block, using your preferred programming language.
+
+- ***Grouping*** simply groups up a sequence of regexp tokens into one single unit.
+- ***Capturing*** simply put is, whatever is contained within a group is what is captured and likewise saved in memory by that very group.
+
 
 Symbol  | Description
 ------------- | -------------
@@ -200,16 +204,30 @@ a(__bc__) | The parentheses create a capturing group with value __bc__
 - - - -
 ### Bracket Expressions
 
+Bracket expressions are a special kind of character classes. In that they both use ```[]```, ```^```, ```-``` and specify what set or a singular type of character(s) to match. One key difference is that the backlash is NOT a metacharacter 
+
 Symbol  | Description
 ------------- | -------------
-Content Cell  | Content Cell
+[]  | makes a class that can be used to find a match for one or a set of characters 
+[abc] | matches a string that has either an a, ab or ac. The same goes for a|b|c, where it could be ab, b or bc.
 
 - - - -
 ### Greedy and Lazy Match
+*Greedy* means match longest possible string. 
+
+- For every position in the string
+    - Try to match the pattern at that position.
+    - If there’s no match, go to the next position.
+
+*Lazy* means match shortest possible string.
+
+- repeat minimal number of times
+- Enable it by putting a question mark '?' after the quantifier, so that it becomes *? or +? or even ?? for '?'.
 
 Symbol  | Description
 ------------- | -------------
-Content Cell  | Content Cell
+.+  | greedy
+*?, +?, ?, ?? | lazy
 
 - - - -
 ### Boundaries
