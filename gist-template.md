@@ -95,6 +95,7 @@ var newStr = str.replace(regex, '(Hello)');
 ```
 Output would be: "world! This 'World' convention is quite common in introducing programming languages."
 
+------------- | -------------
 g  | Global Search serves to make an expression look for all its matches, rather than stopping at the first one. By default, when a regex engine finds the first match for a given pattern in a given test string, it terminates right at that point without looking any further. 
 s  | Content Cell
 m  | Content Cell
