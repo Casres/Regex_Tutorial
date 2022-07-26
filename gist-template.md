@@ -82,9 +82,16 @@ Symbol  | Description
 - - - -
 ### Flags
 
+A flag changes the default searching behavior of a regular expression. It makes a regex search in a different way. With the ```i``` flag set, lowercase/uppercase characters match in the string.
+
 Symbol  | Description
 ------------- | -------------
-Content Cell  | Content Cell
+i  | Ignore Casing is a Boolean and initially is set to true. If the "i" flag is used, then it becomes false. The ```i``` flag indicates that case should be ignored while attempting a match in a string. 
+g  | Content Cell
+s  | Content Cell
+m  | Content Cell
+y  | Content Cell
+u  | Content Cell
 
 - - - -
 ### Grouping and Capturing
