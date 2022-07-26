@@ -161,13 +161,27 @@ Output would be: the 1st alert would be null, since it's on a white space (space
 *__(L in the string is index 0)__*
 
 
-- An example for __Unicode search__ would be:
+- An example for __Unicode search__ would be to look for Chinese hieroglyphs:
+```
+let regexp = /\p{sc=Han}/gu; // returns Chinese hieroglyphs
+
+let str = `Hello Привет 你好 123_456`;
+
+alert( str.match(regexp) ); 
 ```
 
+Output would be: 你,好
+
+- Another example would be to find characters that denote a currency, such as $, €, ¥.
+```
+let regexp = /\p{Sc}\d/gu;
+
+let  str = `Prices: $2, €1, ¥9`;
+
+alert( str.match(regexp) ); 
 ```
 
-Output would be:
-
+Output would be: $2,€1,¥9
 
 - - - -
 ### Grouping and Capturing
