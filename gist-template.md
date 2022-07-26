@@ -93,7 +93,14 @@ m  | Content Cell
 y  | Content Cell
 u  | Content Cell
 
-- i example here: 
+- An example for __Ignore Casing__ would be: 
+```
+var str = "Hello world! This 'Hello World' convention is quite common in introducing programming languages."; 
+var regex = /hello/i; 
+var newStr = str.replace(regex, '(Hello)');
+```
+Output would be: "world! This 'World' convention is quite common in introducing programming languages."
+
 - g example here:
 - s example here:
 - m example here:
