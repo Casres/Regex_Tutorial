@@ -132,6 +132,8 @@ let str = `1st place: Winnie
 
 console.log( str.match(/^\d/gm) ); // 1, 2, 3
 
+-------------------------------------------------
+
 let str = `1st place: Winnie
 2nd place: Piglet
 3rd place: Eeyore`;
