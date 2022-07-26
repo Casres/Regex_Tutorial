@@ -232,23 +232,53 @@ Symbol  | Description
 - - - -
 ### Boundaries
 
+Boundaries use the metacharacter ```\b``` which is an anchor like the caret and the dollar sign. It matches at a position that is called a “word boundary”. This match is zero-length.
+
+- A *zero-width* or *zero-length* match is a regular expression match that does not match any characters. It matches only a position in the given string.  
+
+- There are three different positions that qualify as word boundaries:
+
+    - Before the first character in the string, if the first character is a word character.
+    - After the last character in the string, if the last character is a word character.
+    - Between two characters in the string, where one is a word character and the other is not a word character.
+
+Simply put: ```\b``` allows you to perform a “whole words only” search using a regular expression in the form of ```\b```word```\b```. A “word character” is a character that can be used to form words. All characters that are not “word characters” are “non-word characters”.
+
 Symbol  | Description
 ------------- | -------------
-Content Cell  | Content Cell
+\b  | wrap this around the word your are looking for, and as long as it is surrounded by other characters then it will be found
+\Babc\B | matches only if the pattern is fully surrounded by word characters
+
+- Example: 
+```
+\Babc\B
+
+"ab abc abcc babcd"
+```
+
+Output would be: abc from `babcd`
 
 - - - -
 ### Back-references
 
+Backreferences match the same text as previously matched by a capturing group.
+
 Symbol  | Description
 ------------- | -------------
-Content Cell  | Content Cell
+\1  | (backslash one) references the first capturing group. `\1` matches the exact same text that was matched by the first capturing group
 
 - - - -
 ### Look-ahead and Look-behind
 
+Look-ahead commands to look for `X` but match only when it is followed by `X`. Any pattern can be used instead of `X` and `Y`. While looking for ```X(?=Y)```, the engine of the regular expression detects `X` and then checks whether there is `Y` right after it. In the event that there is no `Y`, then the match is skipped, and the search goes on, but if there is a `Y`, then a match is found and returned.
+
+Lookbehind allows adding a condition for what is behind. In other words, it allows matching a pattern only if there is something before it.
+
 Symbol  | Description
 ------------- | -------------
-Content Cell  | Content Cell
+(?=) and (?<=)  | operations 
+d(?!r)  | matches a d only if is not ***followed*** by r, but r will not be part of the overall regex match
+(?<!r)d | matches a d only if is not ***preceded*** by an r, but r will not be part of the overall regex match
 
 ## Author
 
