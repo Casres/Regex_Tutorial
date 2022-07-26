@@ -86,10 +86,7 @@ A flag changes the default searching behavior of a regular expression. It makes 
 
 Symbol  | Description
 ------------- | -------------
-i  | Ignore Casing is a Boolean and initially is set to true. If the ```i``` flag is used, then it becomes false. The ```i``` flag indicates that case should be ignored while attempting a match in a string. An example for this would be: ```var str = "Hello world! This 'Hello World' convention is quite common in introducing programming languages."; var regex = /hello/i; var newStr = str.replace(regex, '(Hello)');```
-Output would be: "world! This 'World' convention is quite common in introducing programming languages."
-
-
+i  | Ignore Casing is a Boolean and initially is set to true. If the ```i``` flag is used, then it becomes false. The ```i``` flag indicates that case should be ignored while attempting a match in a string. 
 g  | Global Search serves to make an expression look for all its matches, rather than stopping at the first one. By default, when a regex engine finds the first match for a given pattern in a given test string, it terminates right at that point without looking any further. 
 s  | Content Cell
 m  | Content Cell
