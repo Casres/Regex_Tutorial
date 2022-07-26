@@ -188,9 +188,12 @@ Output would be: $2,€1,¥9
 - - - -
 ### Grouping and Capturing
 
+Grouping and Capturing is very useful when needing to *extract information from strings or data* using your preferred programming language. 
+
 Symbol  | Description
 ------------- | -------------
-Content Cell  | Content Cell
+()  | Parentheses create a capturing croup with what ever value is in the parentheses. 
+a(__bc__) | The parentheses create a capturing group with value __bc__
 
 - - - -
 ### Bracket Expressions
