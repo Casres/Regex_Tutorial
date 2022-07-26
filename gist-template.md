@@ -284,4 +284,4 @@ d(?!r)  | matches a d only if is not ***followed*** by r, but r will not be part
 
 ***Christian Casillas*** ~ to see more of my work, please visit my [GitHub](https://github.com/Casres). 
 
-Thank you __🤖🚀__
+Thank you # 🚀 #
