@@ -111,15 +111,15 @@ Output would be: "40 is the half of 40 x 2 that is 80."
 
 
 - An example for __Dot all__ would be:
+```
+The first expression /.+/g without the s flag will match every single line in str. The 'quoted' portions shown below represent the matches:
 
-The first expression /.+/g without the s flag will match every single line in str. The __bolded__ portions shown below represent the matches:
-
-"__Content flows__\n __downward and__ \n __downward__"
+" 'Content flows' \n 'downward and' \n 'downward' "
 
 The second expression /.+/gs with the s flag will make . match every character including \n, which means that the expression will match the whole string str, as shown below:
 
-"Content flows\ndownward and\ndownward"
-
+" 'Content flows\ndownward and\ndownward' "
+```
 
 Output would be:
 
