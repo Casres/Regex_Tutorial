@@ -282,4 +282,4 @@ d(?!r)  | matches a d only if is not ***followed*** by r, but r will not be part
 
 ## Author
 
-Christian Casillas, to see more of my work, please visit my [GitHub](https://github.com/Casres). 
+***Christian Casillas*** ~ to see more of my work, please visit my [GitHub](https://github.com/Casres). 
