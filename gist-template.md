@@ -89,9 +89,9 @@ Symbol  | Description
 i  | __Ignore Casing__ is a Boolean and initially is set to true. If the ```i``` flag is used, then it becomes false. The ```i``` flag indicates that case should be ignored while attempting a match in a string. 
 g  | __Global Search__ serves to make an expression look for all its matches, rather than stopping at the first one. By default, when a regex engine finds the first match for a given pattern in a given test string, it terminates right at that point without looking any further. 
 s  | __Dot all__ (the wildcard) matches all possible characters. By default, the dot character in a regular expression matches everything, but newline characters. To get it to match newline characters as well, we are given the s flag. the 's' is an abbreviation for __*single-line mode*__. 
-m  | Content Cell
-y  | Content Cell
-u  | Content Cell
+m  | __multiline mode__ serves to make the boundary tokens (```^``` and ```$```) match the beginning and end of each line. By default, the (```^``` and ```$```) characters, in an expression, match the beginning and ending boundaries of a given test string that the expression is on. But with the ```m``` flag in place, __they__ instead __do this for every line in the string__. A more controlled flag from ```s```.
+y  | Sticky searching Content Cell
+u  | Unicode search Content Cell
 
 - An example for __Ignore Casing__ would be: 
 ```
@@ -124,7 +124,7 @@ The second expression /.+/gs with the s flag will make . match every character i
 Output would be: Content flows\ndownward and\ndownward. 
 
 
-- An example for __Ignore Casing__ would be:
+- An example for __Multiline mode__ would be:
 ```
 
 ```
@@ -132,7 +132,7 @@ Output would be: Content flows\ndownward and\ndownward.
 Output would be:
 
 
-- An example for __Ignore Casing__ would be:
+- An example for __Sticky searching__ would be:
 ```
 
 ```
@@ -140,7 +140,7 @@ Output would be:
 Output would be:
 
 
-- An example for __Ignore Casing__ would be:
+- An example for __Unicode search__ would be:
 ```
 
 ```
